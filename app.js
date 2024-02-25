@@ -72,10 +72,10 @@ function desencriptaTexto(){
     document.getElementById('textoUsuario').value = '';
 
     //Desencripta
-    const textoDesencriptado= textoUsuario.replaceAll ("enter", "e")
-    .replaceAll ("imes", "i")
-    .replaceAll ("ai", "a")
+    const textoDesencriptado= textoUsuario.replaceAll ("ufat", "u")
     .replaceAll ("ober", "o")
-    .replaceAll ("ufat", "u");
+    .replaceAll ("ai", "a")
+    .replaceAll ("imes", "i")
+    .replaceAll ("enter", "e");
     return document.getElementById('respuesta').value = textoDesencriptado;
 }
