@@ -44,7 +44,7 @@ function encriptaTexto(){
 function copiaTexto(){
     const textoACopiar = document.getElementById('respuesta');
     textoACopiar.select();
-    document.execCommand('copy');
+    navigator.clipboard.writeText(textoACopiar.value);
 
     //Una vez que copia borra el contenido
     document.getElementById('respuesta').value = '';
